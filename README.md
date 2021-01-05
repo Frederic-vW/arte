@@ -65,7 +65,7 @@ To give it a try, the extension can be installed temporarily, selecting the zip 
 
 <details><summary>Firefox-1</summary>
 <p align="center">
-<img width="1011" height="689" src="img/moz_ext_1a.png">
+<img width="48" height="48" src="img/moz_ext_1a.png">
 </p>
 </details>
 
