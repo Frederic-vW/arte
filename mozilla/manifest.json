@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+  "name": "arte - easy download",
+  "version": "1.0",
+  "description": "get mp4 URLs for arte videos",
+  "homepage_url": "https://github.com/Frederic-vW/arte/mozilla/",
+  "icons": {
+    "48": "icons/arte_c48.png"
+  },
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": "icons/arte_c48.png",
+    "default_popup": "index.html",
+    "show_matches": ["*://*.arte.tv/*"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "https://*/",
+    "notifications"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
