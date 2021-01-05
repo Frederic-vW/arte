@@ -65,13 +65,13 @@ To give it a try, the extension can be installed temporarily, selecting the zip 
 
 <details><summary>Firefox-1</summary>
 <p align="center">
-<img width="48" height="48" src="img/moz_ext_1a.png">
+<img width="1011" height="689" src="img/moz_ext_1a.png">
 </p>
 </details>
 
 2. The pageAction becomes active only when visiting the URL pattern: "*://*.arte.tv/*"  
 The extension can be run if the symbol 
-<p align="center"> <img width="1011" height="689" src="mozilla/icons/arte_c48.png"> </p>
+<p align="center"> <img width="48" height="48" src="mozilla/icons/arte_c48.png"> </p>
 appears next to the URL bar.  
 Click the symbol and a popup will list the available mp4 files.  
 
