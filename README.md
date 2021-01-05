@@ -20,3 +20,7 @@ TODO: (...)
 <!--
 ![title](img/arte_dl_title.png)
 -->
+
+<!--
+other implementations: e.g. [this github repo](https://github.com/GuGuss/ARTE-7-Downloader)
+-->
