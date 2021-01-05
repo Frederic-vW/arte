@@ -7,9 +7,13 @@ It contains two independent tools:
 The simple idea is:
 <h3 style="color:#ff0000">Danger</h3>
 
+```
 https://www.arte.tv/de/videos/ *034047-000-A* /maradona-der-goldjunge/
+```
 and  
+```
 https://api.arte.tv/api/player/v1/config/de/ *034047-000-A* ?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
+```
 
 ```html
 <span style="color:black;">https://www.arte.tv/de/videos/</span><span style="color:orange;">034047-000-A</span><span style="color:black;">/maradona-der-goldjunge/</span>
