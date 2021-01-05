@@ -74,9 +74,9 @@ To give it a try, the extension can be installed temporarily by selecting the zi
 </details>
 
 2. The extension is programmed as a 'pageAction', and becomes active only when visiting an URL matching the pattern: "*://*.arte.tv/*"  
-The extension can be run if the arte symbol 
-<p align="center"> <img width="48" height="48" src="mozilla/icons/arte_c48.png"> </p>
-appears next to the URL bar.  
+The extension can be run if the arte symbol appears next to the URL bar.
+<img align="right" width="48" height="48" src="mozilla/icons/arte_c48.png">
+
 Click the symbol and a popup will list the available mp4 files.  
 
 <details><summary>Firefox-2</summary>
