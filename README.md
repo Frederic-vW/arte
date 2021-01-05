@@ -11,9 +11,24 @@ python3 arte_dl.py https://www.arte.tv/de/videos/034047-000-A/maradona-der-goldj
 <p align="center">
 <img width="900" height="41" src="img/arte_dl_1.png">
 </p>
-<!--
-![tsne_embedding](tsne_p100_20080514.png)
--->
+</details>
+
+<details><summary>Command line-2</summary>
+<p align="center">
+<img width="900" height="83" src="img/arte_dl_2.png">
+</p>
+</details>
+
+<details><summary>Command line-3</summary>
+<p align="center">
+<img width="900" height="184" src="img/arte_dl_3.png">
+</p>
+</details>
+
+<details><summary>Command line-4</summary>
+<p align="center">
+<img width="900" height="142" src="img/arte_dl_4a.png">
+</p>
 </details>
 
 ### Firefox extension
@@ -24,7 +39,25 @@ python3 arte_dl.py https://www.arte.tv/de/videos/034047-000-A/maradona-der-goldj
   - URL: get a notification with the mp4 URL
   - Download: directly download the mp4 file
 
-TODO: (...)
+Steps:
+
+<details><summary>Firefox-1</summary>
+<p align="center">
+<img width="1011" height="689" src="img/moz_ext_1a.png">
+</p>
+</details>
+
+<details><summary>Firefox-2</summary>
+<p align="center">
+<img width="965" height="271" src="img/moz_ext_3.png">
+</p>
+</details>
+
+<details><summary>Firefox-3</summary>
+<p align="center">
+<img width="984" height="278" src="img/moz_ext_4.png">
+</p>
+</details>
 
 <!--
 ![title](img/arte_dl_title.png)
