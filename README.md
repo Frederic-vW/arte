@@ -10,7 +10,7 @@ and
 https://api.arte.tv/api/player/v1/config/de/**034047-000-A**?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
 
 <pre>
-sample <b>sample</b> sample
+https://www.arte.tv/de/videos/<b>034047-000-A</b>/maradona-der-goldjunge/
 </pre>
 
 ```
