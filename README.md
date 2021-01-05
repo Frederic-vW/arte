@@ -1,6 +1,5 @@
 ## arte - easy download
-If you can't access [arte TV](https://www.arte.tv/) at your current location, this repo may help.  
-It contains two *independent* tools:  
+If you can't access [arte TV](https://www.arte.tv/) at your current location, this repo may help. It contains two *independent* tools:  
 - a Python-3 command line script
 - a Firefox extension
 
@@ -10,7 +9,7 @@ The simple idea behind both is that the URL you are browsing, for instance
 https://www.arte.tv/de/videos/<b>034047-000-A</b>/maradona-der-goldjunge/
 </pre>
 
-may not be accessible, but it contains the substring **034047-000-A** (VID), which is enough to derive the URL of the JSON file
+may not be accessible, but it contains the substring 034047-000-A (a parameter called VID), which is enough to derive the URL of the JSON file
 
 <pre>
 https://api.arte.tv/api/player/v1/config/de/<b>034047-000-A</b>?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
