@@ -87,7 +87,7 @@ def dump(src,dst):
 def fetch_dump(url,dst):
     j = fetch_json(url)
     link = fetch_mp4url(j)
-    r = dump(link,dst)
+    dump(link,dst)
 
 
 if __name__ == "__main__":
