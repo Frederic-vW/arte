@@ -87,7 +87,7 @@ Click the symbol and a popup will list the available mp4 files.
 
 Each file has 2 options:
 1. URL: get a notification with the URL of the .mp4 file (see image below). You can open the movie in another tab, watch it, download it manually, or use the URL otherwise.
-2. Download ("&#9660;" arrow): download the .mp4 file into your default Downloads folder. The file name will contain the VID substring and the current date and time. 
+2. Download (symbol: "&#9660;"): download the .mp4 file into your default Downloads folder. The file name will contain the VID substring and the current date and time. 
 
 <details><summary>Firefox-3</summary>
 <p align="center">
