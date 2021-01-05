@@ -3,23 +3,24 @@ If you can't access [arte TV](https://www.arte.tv/) at your current location, th
 - a Python-3 command line script
 - a Firefox extension
 
-The simple idea behind both is that the URL you are browsing, for instance
+The simple idea is that, although the URL you are browsing, for instance
 
 <pre>
 https://www.arte.tv/de/videos/<b>034047-000-A</b>/maradona-der-goldjunge/
 </pre>
 
-may not be accessible, but it contains the substring 034047-000-A (a parameter called VID), which is enough to derive the URL of the JSON file
+may not offer you a webplayer in your country, the substring 034047-000-A (a parameter called VID), is sufficient to construct the URL of the JSON file
 
 <pre>
 https://api.arte.tv/api/player/v1/config/de/<b>034047-000-A</b>?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
 </pre>
 
-that contains the URLs of all the media (.mp4) files.
+that contains the URLs of all the media (.mp4) files.  
+The design principle is minimal. If you hit an unavailable site while browsing, or want to download a video for later use, these tools should give you access with a terminal one-liner (Python) or a single browser click (Firefox extension).
 
 
 ### Python
-Use the Python script from the command line:
+Run the Python script from the command line with the movie URL as its only argument:
 
 ```shell
 python3 arte_dl.py https://www.arte.tv/de/videos/034047-000-A/maradona-der-goldjunge/
@@ -31,7 +32,7 @@ python3 arte_dl.py https://www.arte.tv/de/videos/034047-000-A/maradona-der-goldj
 </p>
 </details>
 
-and it will output the URL of the JSON file
+It will first output the URL of the JSON file
 
 <details><summary>Command line-2</summary>
 <p align="center">
@@ -48,7 +49,7 @@ Tell the terminal which index you want to download
 </p>
 </details>
 
-and the file will be downloaded in the same folder, using an automatic file name made from the VID substring and the current date and time:
+and the file will be downloaded into your current working directory, using a file name made from the VID substring and the current date and time:
 
 <details><summary>Command line-4</summary>
 <p align="center">
@@ -56,12 +57,15 @@ and the file will be downloaded in the same folder, using an automatic file name
 </p>
 </details>
 
+Done.
+
 
 ### Firefox extension
+If you don't use Python and the terminal, there is a browser extension (Firefox) in the mozilla subfolder.
 
 #### Steps
 1. Install the arte_dl.zip extension in Firefox (or make your own zip file, compressing the following files from the mozilla folder: manifest.json, popup.js, background.js, index.html, and the icons subfolder).  
-To give it a try, the extension can be installed temporarily, selecting the zip file, or the manifest.json file when using the uncompressed files:
+To give it a try, the extension can be installed temporarily by selecting the zip file, or the manifest.json file when using the uncompressed files:
 
 <details><summary>Firefox-1</summary>
 <p align="center">
@@ -69,8 +73,8 @@ To give it a try, the extension can be installed temporarily, selecting the zip 
 </p>
 </details>
 
-2. The pageAction becomes active only when visiting the URL pattern: "*://*.arte.tv/*"  
-The extension can be run if the symbol 
+2. The extension is programmed as a 'pageAction', and becomes active only when visiting an URL matching the pattern: "*://*.arte.tv/*"  
+The extension can be run if the arte symbol 
 <p align="center"> <img width="48" height="48" src="mozilla/icons/arte_c48.png"> </p>
 appears next to the URL bar.  
 Click the symbol and a popup will list the available mp4 files.  
@@ -82,8 +86,8 @@ Click the symbol and a popup will list the available mp4 files.
 </details>
 
 Each file has 2 options:
-  - URL: get a notification with the mp4 URL (see image below). You can open the movie in another tab, watch it, download it manually, or use the URL otherwise.
-  - Download (arrow): directly download the mp4 file to your default Downloads folder, using an automated file name (VID substring and current date and time) 
+1. URL: get a notification with the URL of the .mp4 file (see image below). You can open the movie in another tab, watch it, download it manually, or use the URL otherwise.
+2. Download ("&#9660;" arrow): download the .mp4 file into your default Downloads folder. The file name will contain the VID substring and the current date and time. 
 
 <details><summary>Firefox-3</summary>
 <p align="center">
@@ -94,3 +98,7 @@ Each file has 2 options:
 
 ### Other solutions
 Others have provided alternative solutions for the same problem, such as this wonderful [github repo](https://github.com/GuGuss/ARTE-7-Downloader).
+
+
+### Feedback
+Feedback is always welcome, please report any issues.
