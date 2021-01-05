@@ -7,6 +7,15 @@ Using the Python script:
 python3 arte_dl.py https://www.arte.tv/de/videos/034047-000-A/maradona-der-goldjunge/
 ```
 
+<details><summary>Command line-1</summary>
+<p align="center">
+<img width="900" height="41" src="img/arte_dl_1.png">
+</p>
+<!--
+![tsne_embedding](tsne_p100_20080514.png)
+-->
+</details>
+
 ### Firefox extension
 - Install the arte_dl.zip extension in Firefox
 - The pageAction becomes active When visiting any site: "*://*.arte.tv/*"
