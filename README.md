@@ -1,33 +1,22 @@
 ## arte - easy download
 If you can't access [arte TV](https://www.arte.tv/) at your current location, this repo may help.  
-It contains two independent tools:  
+It contains two *independent* tools:  
 - a Python-3 command line script
 - a Firefox extension
 
-The simple idea is:
-https://www.arte.tv/de/videos/**034047-000-A**/maradona-der-goldjunge/
-and  
-https://api.arte.tv/api/player/v1/config/de/**034047-000-A**?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
+The simple idea behind both is that the URL you are browsing, for instance
 
 <pre>
 https://www.arte.tv/de/videos/<b>034047-000-A</b>/maradona-der-goldjunge/
 </pre>
 
-```
-https://www.arte.tv/de/videos/**034047-000-A**/maradona-der-goldjunge/
-```
-and  
-```
-https://api.arte.tv/api/player/v1/config/de/**034047-000-A**?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
-```
+may not be accessible, but it contains the substring **034047-000-A**, which is enough to derive the URL of the JSON file
 
-```html
-<span style="color:black;">https://www.arte.tv/de/videos/</span><span style="color:orange;">034047-000-A</span><span style="color:black;">/maradona-der-goldjunge/</span>
-```
-and
-```html
-<span style="color:black;">https://api.arte.tv/api/player/v1/config/de/</span><span style="color:orange;">034047-000-A</span><span style="color:black;">?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide</span>
-```
+<pre>
+https://api.arte.tv/api/player/v1/config/de/<b>034047-000-A</b>?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
+</pre>
+
+that contains the URLs of all the media (.mp4) files.
 
 
 ### Python
