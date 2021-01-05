@@ -8,7 +8,7 @@ runs as soon as popup is opened by clicking on the pageAction icon
 getActiveTab().then((tabs) => {
   var url = tabs[0].url;
   var urlParts = url.split("/");
-  var mov_id = urlParts[urlParts.indexOf("videos")+1];
+  var vid = urlParts[urlParts.indexOf("videos")+1];
   var langCode = urlParts[urlParts.indexOf("videos")-1];
   var langDict = {
     "de" : "de_DE",
@@ -27,7 +27,7 @@ getActiveTab().then((tabs) => {
   // fetch and read json file
   var jsonUrl = "https://api.arte.tv/api/player/v1/config/"
               + langCode + "/"
-              + mov_id
+              + vid
               + "?autostart=1&lifeCycle=1&amp;"
               + "lang=" + langDict[langCode]
               + "&amp;config=arte_tvguide";
@@ -36,7 +36,7 @@ getActiveTab().then((tabs) => {
     // number of movie files
     var nElem = Object.keys(json.videoJsonPlayer["VSR"]).length;
     var loc = document.getElementById("buttons");
-    var vid = json.videoJsonPlayer["VID"];
+    //var vid = json.videoJsonPlayer["VID"];
     for (var k in json.videoJsonPlayer["VSR"]) {
       var id = json.videoJsonPlayer["VSR"][k]["id"];
       var quality = json.videoJsonPlayer["VSR"][k]["quality"];
