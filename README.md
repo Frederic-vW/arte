@@ -1,4 +1,19 @@
 ## arte - easy download
+If you can't access [arte TV](https://www.arte.tv/) at your current location, this repo may help.  
+It contains two independent tools:  
+- a Python-3 command line script
+- a Firefox extension
+
+The simple idea is:
+
+```html
+<span style="color:black;">https://www.arte.tv/de/videos/</span><span style="color:orange;">034047-000-A</span><span style="color:black;">/maradona-der-goldjunge/</span>
+```
+and
+```html
+<span style="color:black;">https://api.arte.tv/api/player/v1/config/de/</span><span style="color:orange;">034047-000-A</span><span style="color:black;">?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide</span>
+```
+
 
 ### Python
 Using the Python script:
@@ -63,6 +78,5 @@ Steps:
 ![title](img/arte_dl_title.png)
 -->
 
-<!--
-other implementations: e.g. [this github repo](https://github.com/GuGuss/ARTE-7-Downloader)
--->
+### Other solutions
+Others have provided alternative solutions for the same problem, such as this wonderful [github repo](https://github.com/GuGuss/ARTE-7-Downloader).
