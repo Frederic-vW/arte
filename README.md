@@ -67,7 +67,7 @@ If you don't use Python and the terminal, there is a browser extension (Firefox)
 1. Install the arte_dl.zip extension in Firefox (or make your own zip file, compressing the following files from the mozilla folder: manifest.json, popup.js, background.js, index.html, and the icons subfolder).  
 To give it a try, the extension can be installed temporarily by selecting the zip file, or the manifest.json file when using the uncompressed files:
 
-<details><summary>Firefox-1</summary>
+<details><summary>Click: how to install a temporary Firefox extension? </summary>
 <p align="center">
 <img width="1011" height="689" src="img/moz_ext_1a.png">
 </p>
@@ -79,7 +79,7 @@ The extension can be run if the arte symbol appears next to the URL bar.
 
 Click the symbol and a popup will list the available mp4 files.  
 
-<details><summary>Firefox-2</summary>
+<details><summary>Click: the running extension</summary>
 <p align="center">
 <img width="965" height="271" src="img/moz_ext_3.png">
 </p>
@@ -89,15 +89,21 @@ Each file has 2 options:
 1. URL: get a notification with the URL of the .mp4 file (see image below). You can open the movie in another tab, watch it, download it manually, or use the URL otherwise.
 2. Download (symbol: "&#9660;"): download the .mp4 file into your default Downloads folder. The file name will contain the VID substring and the current date and time. 
 
-<details><summary>Firefox-3</summary>
+<details><summary>Click: the URL notification</summary>
 <p align="center">
 <img width="984" height="278" src="img/moz_ext_4.png">
 </p>
 </details>
 
 
-### Other solutions
-Others have provided alternative solutions for the same problem, such as this wonderful [github repo](https://github.com/GuGuss/ARTE-7-Downloader).
+### References
+Others solutions for the same problem: 
+- https://github.com/GuGuss/ARTE-7-Downloader
+- https://github.com/sbonaime/ARTE-7-Playground
+- https://github.com/known-as-bmf/plugin.video.arteplussept
+- https://github.com/solsticedhiver/arteVIDEOS
+- https://mediathekview.de/
+- ...
 
 
 ### Feedback
