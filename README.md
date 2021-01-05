@@ -8,6 +8,11 @@ The simple idea is:
 https://www.arte.tv/de/videos/**034047-000-A**/maradona-der-goldjunge/
 and  
 https://api.arte.tv/api/player/v1/config/de/**034047-000-A**?autostart=1&lifeCycle=1&amp;lang=de_DE&amp;config=arte_tvguide
+
+<pre>
+sample <b>sample</b> sample
+</pre>
+
 ```
 https://www.arte.tv/de/videos/**034047-000-A**/maradona-der-goldjunge/
 ```
