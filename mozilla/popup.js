@@ -1,44 +1,10 @@
-function getActiveTab() {
-  return browser.tabs.query({active: true, currentWindow: true});
-}
-
-// Button-1 click event: show notification with URL
-function getBtnEvent1(url) {
-    function f() {
-      console.log("URL button clicked: " + url);
-      browser.notifications.create({
-        "type": "basic",
-        "title": "Movie link:",
-        "message": url
-      });
-    }
-    return f;
-}
-
-// Button-2 click event: download URL
-function getBtnEvent2(url,vid) {
-    function f() {
-      console.log("Download button clicked: " + url);
-      /* get formatted date string for file name
-      example:
-      Tue Jan 05 2021 15:25:50 GMT+1100 (Australian Eastern Daylight Time)
-      is converted into:
-      2021-01-05T15-25-50
-      */
-      var date = new Date(); // Date.now()
-      var tz = date.getTimezoneOffset() * 60000; // [msec]
-      var now = (new Date(date-tz)).toISOString().split('.')[0].replace(/:/g,"-");
-      var filename = vid + "_" + now + '.mp4';
-      console.log("Download to: " + filename);
-      browser.downloads.download({
-        url : url,
-        filename : filename,
-        conflictAction : 'uniquify'
-      });
-    }
-    return f;
-}
-
+/*
+runs as soon as popup is opened by clicking on the pageAction icon
+1) get tab URL
+2) construct URL for JSON with source file info
+3) parse JSON file
+4) dynamically populate popup html with file info + buttons
+*/
 getActiveTab().then((tabs) => {
   var url = tabs[0].url;
   var urlParts = url.split("/");
@@ -115,3 +81,34 @@ getActiveTab().then((tabs) => {
     }
   }).catch(err => { console.log(err) });
 });
+
+function getActiveTab() {
+  return browser.tabs.query({active: true, currentWindow: true});
+}
+
+// Button-1 click event: show notification with URL
+function getBtnEvent1(url) {
+    function f() {
+      console.log("URL button clicked: " + url);
+      browser.notifications.create({
+        "type": "basic",
+        "title": "Movie link:",
+        "message": url
+      });
+    }
+    return f;
+}
+
+/*
+Button-2 click event: download URL
+needs to run in background script: if performed here, download stops as soon as
+popup loses focus
+background script is informed via browser.runtime.sendMessage
+*/
+function getBtnEvent2(url,vid) {
+    function f() {
+      console.log("Download button clicked: " + url);
+      browser.runtime.sendMessage({"url": url, "vid": vid});
+    }
+    return f;
+}
