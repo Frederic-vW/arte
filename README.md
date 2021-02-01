@@ -1,7 +1,8 @@
 ## arte - easy download
-If you can't access [arte TV](https://www.arte.tv/) at your current location, this repo may help. It contains two *independent* tools:  
+If you can't access [arte TV](https://www.arte.tv/) at your current location, this repo may help. It contains three *independent* tools:  
 - a Python-3 command line script
 - a Firefox extension
+- a Chromium/Chrome script (Tampermonkey)
 
 The simple idea is that, although the URL you are browsing, for instance
 
