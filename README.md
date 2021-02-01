@@ -96,6 +96,11 @@ Each file has 2 options:
 </details>
 
 
+### Chromium / Chrome script (Tampermonkey)
+For Chromium/Chrome, the [tampermonkey script](https://github.com/Frederic-vW/arte/blob/main/chrome/arte-dl.user.js) should work. It prints a list of links directly below the video title. The URL button activates a popup containing the (clickable) movie URL, the right arrow button (symbol: "&#x25B6;") opens the movie in a new tab, from where it can be downloaded via a right click: "Save video as..." (Ctrl+S), or simply be watched, even if blocked in your country.  
+Tampermonkey instructions can be found at the [chrome web store](https://chrome.google.com/webstore/detail/tampermonkey).
+
+
 ### References
 Others solutions for the same problem: 
 - https://github.com/GuGuss/ARTE-7-Downloader
